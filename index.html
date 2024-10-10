@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h2 class="logo">Logo</h2>
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li>
+                    <a href="#Home">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="#About">Giới Thiệu</a>
+                </li>
+                <li>
+                    <a href="#About">Sản Phẩm</a>
+                </li>
+            
+                <li>
+                    <button class="btnlogin">Đăng Nhập</button>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Đăng Nhập</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="type" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mật Khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        Nhớ Mật Khẩu</label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn">ĐĂNG NHẬP</button>
+                <div class="login-register">
+                    <p>Bạn chưa có tài khoản?
+                        <a href="#" class="register-link">
+                            Đăng Kí</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Đăng Kí</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="contact"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Tài Khoản</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <input type="text" required>
+                    <label>Số Điện Thoại</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="type" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Mát Khẩu</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="mpassword" id="confirmpassword" required>
+                    <label>Nhập Lại Mật Khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>
+                        Đồng ý với các điều khoản và điều kiện</label>
+                </div>
+                <button type="submit" class="btn">ĐĂNG KÍ</button>
+                <div class="login-register">
+                    <p>Bạn Đã Có Tài Khoản?
+                        <a href="#" class="login-link">
+                            Đăng Nhập</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="contact-icon" onclick="toggleContactForm()">
+        📞
+      </div>
+      <div class="mess-icon" onclick="window.open('https://www.facebook.com/Q.Quan1611/', '_blank')">
+        📞
+    </div>
+    
+      <!-- Contact Form -->
+      <div class="contact-form" id="contactForm">
+        <div class="contact-header">
+          <h2>Contact Us</h2>
+          <span class="close-btn" onclick="toggleContactForm()">×</span>
+        </div>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <div class="check-user">
+            <label><input type="checkbox" required>
+                Bạn là người </label>
+        </div>
+          <button type="submit">Send Message</button>
+
+        </form>
+      </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
